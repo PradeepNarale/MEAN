@@ -1,0 +1,20 @@
+<div class="container">
+    <span class="heading">Update The Product</span>
+    <div class="main">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" [(ngModel)]="product.title" class="form-control" id="title" placeholder="Enter Title">
+        </div>
+        <div class="mb-3">
+            <label for="subtitle" class="form-label">Sub Title</label>
+            <input type="text" [(ngModel)]="product.subtitle" class="form-control" id="subtitle" placeholder="Enter Sub-Title">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea [(ngModel)]="product.description" class="form-control" id="description" rows="3"></textarea>
+        </div>
+        <div class="button">
+            <button type="button" (click)="updateProduct()" class="btn btn-info">Update</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="conatiner">
+    <span>Insert Product</span>
+    <div class="main">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="email" [(ngModel)]="title" (input)="validateInput($event)" class="form-control" id="exampleFormControlInput1" placeholder="Enter Titile">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Sub Title</label>
+            <input type="email"  [(ngModel)]="subtitle" (input)="validateInput($event)" class="form-control" id="exampleFormControlInput1" placeholder="Enter Sub-Titile">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control"  [(ngModel)]="description" (input)="validateInput($event)" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="button">
+            <button type="button" (click)="onSubmit()" class="btn btn-info">Submit</button>
+        </div>
+    </div>
+</div>

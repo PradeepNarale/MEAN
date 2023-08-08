@@ -1,0 +1,15 @@
+.grid
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+.card
+{
+    margin: 10px;
+}
+.button-grid
+{
+    display: flex;
+    justify-content: space-between;
+}

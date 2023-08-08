@@ -1,0 +1,16 @@
+<div class="grid">
+    <div class="card" *ngFor="let card of cards" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{card.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">{{card.description}}</p>
+            <div class="button-grid">
+                <button type="button" class="btn btn-warning"  (click)="goToUpdate(card._id)">Update</button>
+                <button type="button" class="btn btn-warning" (click)="onDelete(card._id)">delete</button>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
